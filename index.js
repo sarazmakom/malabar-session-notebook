@@ -24,7 +24,7 @@ function checkInputLength(inputString) {
 // console.log(isValid); //false as it's 4 characters long
 
 const isValid = checkInputLength("Hi");
-console.log(isValid); //true as it's 3 characters long
+// console.log(isValid); //true as it's 3 characters long
 
 //////
 
@@ -47,3 +47,37 @@ function pushFruit(fruit) {
 
 pushFruit("pineapple");
 // console.log("More fruits: ", fruits);
+
+// SECOND PART OF THE DAY
+function user() {} //not good name
+function getUser() {} // better, we can assume it's gonna return a user
+function getUserById() {} //even better, more specific
+
+//FIRST way of writing a function:
+// function addNumbers(number1, number2) {
+//   const sum = number1 + number2;
+//   return sum;
+// }
+// console.log(addNumbers(4, 5));
+
+//SECOND way to write the same function:
+// const addNumbers = function (number1, number2) {
+//   const sum = number1 + number2;
+//   return sum;
+// };
+// console.log(addNumbers(4, 5));
+
+//THIRD way with arrow function:
+// const addNumbers = (number1, number2) => {
+//   const sum = number1 + number2;
+//   return sum;
+// };
+// console.log(addNumbers(4, 5));
+
+// if we declare the second parameter as default zero, we can call one parameter and avoid NaN
+const addNumbers = (number1, number2 = 0) => {
+  const sum = number1 + number2;
+  return sum;
+};
+// without adding =0 to number2, we would get NaN cause it expects 2 parameters
+console.log(addNumbers(4));
