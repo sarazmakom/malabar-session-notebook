@@ -1,3 +1,5 @@
+// react state 1 notes
+
 import { useState } from "react";
 
 function Counter() {
@@ -23,3 +25,4 @@ function Counter() {
 }
 
 // const [state, setState] = useState(initialState)
+
